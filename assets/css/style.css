@@ -10,6 +10,22 @@ body {
     color: #585858;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 *,
 *::after,
 *::before {
@@ -23,7 +39,8 @@ body {
     padding: 0 15px;
 }
 
-/* Header */
+/* Header 
+========================================*/
 .header {
     width: 100%;
 
@@ -44,7 +61,8 @@ body {
     align-items: center;
 }
 
-/* Nav */
+/* Nav
+====================================== */
 .nav {
     display: flex;
     height: 100%;
@@ -69,4 +87,162 @@ body {
 
 .nav__link:hover {
     background-color: #004AF2;
+}
+
+/* Intro
+======================================== */
+.intro {
+    background: #fff url("../images/intro-bg.jpg") no-repeat center / cover;
+}
+
+.intro__inner {
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.intro__text {
+    margin-bottom: 45px;
+
+    text-align: right;
+}
+
+.intro__countries {
+    color: #fff;
+    font-size: 15px;
+}
+
+.intro__title {
+    position: relative;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    line-height: 0.9;
+    color: rgba(255, 255, 255, .8);
+}
+
+.intro__title-amp {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 170px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, .2);
+}
+
+
+/* Request form
+========================================= */
+.request-form {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+
+    background-color: #004AF2;
+    border-radius: 5px;
+}
+
+.request-form--intro {
+    position: relative;
+    bottom: -30px;
+}
+
+.request-form__header {
+    padding: 20px 30px;
+
+    background-color: #033FC9;
+}
+
+.request-form__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.request-form__text {
+    color: #fff;
+    line-height: 1.4;
+}
+
+.request-form__content {
+    padding: 30px;
+}
+
+/* Form */
+.form__group {
+    margin-bottom: 25px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding-bottom: 12px;
+    padding-left: 50px;
+
+    background: none;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .25);
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+
+    transition: border-color .1s linear;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    outline: 0;
+    border-bottom-color: #fff;
+}
+
+.input--user {
+    background: url('../images/user-icon.svg') left 15px top 5px no-repeat;
+}
+
+.input--tel {
+    background: url('../images/tel-icon.svg') left 15px top 5px no-repeat;
+}
+
+.input--email {
+    background: url('../images/email-icon.svg') left 15px top 8px no-repeat;
+}
+
+/* Btn
+============================================= */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 11px 20px;
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+
+    background: #333;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn--orange {
+    background-image: linear-gradient(to right, #FF903E, #FF2C2C);
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
 }

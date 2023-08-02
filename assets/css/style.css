@@ -6,7 +6,7 @@ body {
     /* font-family: 'Lato', sans-serif; */
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #585858;
 }
 
@@ -38,7 +38,7 @@ p {
 
 .img {
     display: block;
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -179,7 +179,6 @@ p {
 
 .request-form__text {
     color: #fff;
-    line-height: 1.4;
 }
 
 .request-form__content {
@@ -267,6 +266,10 @@ input:focus {
     padding: 60px 0;
 }
 
+.section--gray {
+    background-color: #F9F9F9;
+}
+
 .section--map {
     background: url('../images/clients/map.svg') left 30px top 130px no-repeat;
 }
@@ -338,7 +341,6 @@ input:focus {
 
     color: #585858;
     font-size: 15px;
-    line-height: 1.4;
 }
 
 .services__footer {
@@ -547,6 +549,68 @@ input:focus {
 
 .benefits-list__text {
     font-size: 15px;
-    line-height: 1.4;
     color: #585858;
+}
+
+/* Team
+==================================== */
+
+.team {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team__col {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, .16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+    color: #2C2C2C;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+
+    font-size: 15px;
+    color: #585858;
+}
+
+.team__contacts {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.team__contacts li {
+    margin-bottom: 9px;
+}
+
+.team__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team__contacts a:hover {
+    text-decoration: underline;
+}
+
+.team__contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 7px;
 }

@@ -36,6 +36,12 @@ p {
     box-sizing: border-box;
 }
 
+.img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 100%;
     max-width: 1230px;
@@ -474,4 +480,73 @@ input:focus {
 .reviews__content p {
     margin-bottom: 20px;
     text-indent: 20px;
+}
+
+/* Benefits
+========================================= */
+
+.benefits {
+    display: flex;
+}
+
+.benefits__col {
+    width: 50%;
+}
+
+.benefits-list {
+    padding-left: 50px;
+    width: 100%;
+    max-width: 370px;
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
+    background-size: 2px 35px;
+    background-repeat: repeat-y;
+    background-position: left 12px top -4px;
+}
+
+.benefits-list::after,
+.benefits-list::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 36px;
+
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.benefits-list::before {
+    background: #fff url('../images/pin-start.svg');
+
+    top: 1px;
+}
+
+.benefits-list::after {
+    background: #fff url('../images/pin-end.svg');
+
+    bottom: -4px;
+}
+
+.benefits-list__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.benefits-list__title {
+    margin-bottom: 12px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.benefits-list__text {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #585858;
 }

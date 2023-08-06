@@ -100,8 +100,7 @@ p {
 ====================================== */
 .nav {
     display: flex;
-    height: auto;
-    min-height: calc(100vh - 50px);
+    height: 100%;
 
     font-size: 15px;
 }
@@ -1131,6 +1130,7 @@ input:focus {
         display: none;
         width: 100%;
         height: auto;
+        min-height: calc(100vh - 50px);
         flex-direction: column;
         padding-top: 9px;
 

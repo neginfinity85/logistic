@@ -801,11 +801,9 @@ input:focus {
 ======================================= */
 
 .articles {
-    margin-bottom: 30px;
-
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 -15px 30px;
 }
 
 .articles--column {
@@ -821,6 +819,7 @@ input:focus {
     margin-bottom: 20px;
     width: 100%;
     max-width: 500px;
+    padding: 0 15px;
 }
 
 .articles__title {
@@ -1122,6 +1121,19 @@ input:focus {
 
 @media (max-width: 991px) {
 
+    /* Intro */
+    .intro__title {
+        font-size: 90px;
+    }
+
+    .intro__title-amp {
+        font-size: 120px;
+
+        right: auto;
+        left: 85%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
     /* Section */
     .section__title {
         text-align: center;
@@ -1153,6 +1165,13 @@ input:focus {
 
     .clients__list li {
         max-width: 130px;
+    }
+
+    /* Footer */
+    .footer {
+        background-size: 330px auto;
+        background-position: left -30px bottom -30px,
+            right -30px bottom -30px;
     }
 
 
@@ -1196,6 +1215,17 @@ input:focus {
     }
 
     /* Intro */
+    .intro__title {
+        font-size: 70px;
+    }
+
+    .intro__title-amp {
+        font-size: 100px;
+
+        right: auto;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
 
     .intro {
         margin-bottom: 0;
@@ -1209,9 +1239,6 @@ input:focus {
         height: auto;
     }
 
-    .intro__title {
-        font-size: 90px;
-    }
 
     .intro__text {
         order: 1;
@@ -1221,13 +1248,7 @@ input:focus {
         text-align: center;
     }
 
-    .intro__title-amp {
-        font-size: 120px;
 
-        right: auto;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
-    }
 
     /* request-form */
     .request-form--intro {
@@ -1269,6 +1290,40 @@ input:focus {
     .team__col:last-child {
         margin-bottom: 0;
     }
+
+    /* Mission */
+    .mission__main-title {
+        font-size: 60px;
+    }
+
+    .mission {
+        padding: 40px 20px;
+        margin-top: -16px;
+    }
+
+    .mission__title {
+        font-size: 24px;
+    }
+
+    .mission__subtitle {
+        font-size: 18px;
+    }
+
+    /* Articles */
+    .articles {
+        flex-wrap: wrap;
+    }
+
+    .articles__item {
+        max-width: none;
+    }
+
+    /* Footer */
+    .footer {
+        background-size: 250px auto;
+        background-position: left -20px bottom -30px,
+            right -20px bottom -30px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1284,8 +1339,20 @@ input:focus {
 
     /* Sevices */
 
+    .services {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
     .services__main-title {
+        width: 100%;
+
         font-size: 60px;
+        text-align: center;
+
+        bottom: auto;
+        right: auto;
+        top: 20px;
     }
 
     .services__item {
@@ -1297,8 +1364,22 @@ input:focus {
         padding: 30px 0;
     }
 
+    .section--last {
+        margin-bottom: 30px;
+    }
+
     .section__title {
         font-size: 35px;
+    }
+
+    /* Request form */
+    .request-form__header,
+    .request-form__content {
+        padding: 20px;
+    }
+
+    .request-form__title {
+        font-size: 25px;
     }
 
     /* Clients */
@@ -1317,4 +1398,46 @@ input:focus {
     .clients__list-logo {
         margin: 0 auto;
     }
+
+    .clients-love {
+        margin-left: 15px;
+    }
+
+    /* Mission */
+    .mission__main-title {
+        font-size: 40px;
+    }
+
+    .mission {
+        padding: 30px 20px;
+        margin-top: -10px;
+    }
+
+    .mission__title {
+        font-size: 20px;
+    }
+
+    .mission__subtitle {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        background-position: left -120px bottom -80px,
+            right -120px bottom -80px;
+    }
+}
+
+
+@media (max-width: 320px) {
+
+    /* Intro */
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro__title-amp {
+        font-size: 50px;
+    }
+
 }

@@ -1234,6 +1234,41 @@ input:focus {
         order: 2;
         position: static;
     }
+
+    /* Benefits */
+    .benefits {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .benefits__col {
+        width: 100%;
+    }
+
+    .benefits-list {
+        margin-bottom: 30px;
+        max-width: none;
+    }
+
+    /* Team */
+
+    .team {
+        flex-direction: column;
+    }
+
+    .team__col {
+        width: 100%;
+    }
+
+    .team__item {
+        max-width: 370px;
+        margin: 0 auto;
+    }
+
+    .team__col:last-child {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 575px) {

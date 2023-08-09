@@ -118,7 +118,7 @@ p {
     color: #fff;
     text-decoration: none;
 
-    transition: background-color .1s linear;
+    transition: background .1s linear;
 }
 
 .nav__link.active {

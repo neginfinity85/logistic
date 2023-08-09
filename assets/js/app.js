@@ -4,6 +4,9 @@ $(function () {
 	let introH = intro.innerHeight();
 	let headerH = header.innerHeight();
 
+	/* Header class on scroll
+	=========================================== */
+
 	headerScroll();
 
 	$(window).on('scroll resize', function () {
@@ -22,4 +25,21 @@ $(function () {
 			header.removeClass('header--dark');
 		}
 	}
+
+	/* Smooth Scroll to sections
+	=========================================== */
+
+	$('[data-scroll]').on('click', function (event) {
+		event.preventDefault();
+
+		let scrollEl = $(this).data('scroll');
+		let scrollElPos = $(scrollEl).offset().top;
+
+		$('html, body').animate(
+			{
+				scrollTop: scrollElPos - headerH,
+			},
+			500,
+		);
+	});
 });

@@ -936,7 +936,7 @@ input:focus {
 }
 
 .modal.show {
-    display: flex;
+    display: block;
 }
 
 .modal__inner {
@@ -953,6 +953,11 @@ input:focus {
     position: relative;
 
     background-color: #fff;
+    opacity: 0;
+
+    transform: scale(0.5);
+
+    transition: transform .2s ease-out, opacity .2s ease-out;
 }
 
 .modal__header {

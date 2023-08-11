@@ -126,7 +126,8 @@ $(function () {
 		}, 200);
 	}
 
-	/* Slick slider https://kenwheeler.github.io/slick/
+	/* Slick slider for <Intro> block 
+	https://kenwheeler.github.io/slick/
 	=========================================== */
 	let introSlider = $('#introSlider');
 
@@ -147,5 +148,20 @@ $(function () {
 
 	$('#introSliderNext').on('click', function () {
 		introSlider.slick('slickNext');
+	});
+
+	/* Slick slider for <Clients reviews> block 
+	https://kenwheeler.github.io/slick/
+	=========================================== */
+
+	let reviewsSlider = $('#reviewsSlider');
+
+	reviewsSlider.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		dots: true,
+		speed: 500,
 	});
 });

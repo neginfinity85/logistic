@@ -125,4 +125,27 @@ $(function () {
 			modal.removeClass('show');
 		}, 200);
 	}
+
+	/* Slick slider https://kenwheeler.github.io/slick/
+	=========================================== */
+	let introSlider = $('#introSlider');
+
+	introSlider.slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 500,
+	});
+
+	$('#introSliderPrev').on('click', function () {
+		introSlider.slick('slickPrev');
+	});
+
+	$('#introSliderNext').on('click', function () {
+		introSlider.slick('slickNext');
+	});
 });

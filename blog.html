@@ -34,15 +34,18 @@
                         <img src="assets/images/logo.svg" alt="CenterLogistic">
                     </a>
 
-                    <nav class="nav">
+                    <nav class="nav" id="nav">
                         <a class="nav__link" href="index.html">Home</a>
                         <a class="nav__link active" href="blog.html">Blog</a>
                         <a class="nav__link" href="privacy.html">Privacy Policy</a>
                         <a class="nav__link" href="terms.html">Terms &amp; Conditions</a>
                     </nav>
 
-                    <button class="burger" type="button">
-                        <img class="burger__icon" src="assets/images/burger.svg" alt="">
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__line">1</span>
+                        <span class="burger__line">2</span>
+                        <span class="burger__line">3</span>
+                        <span class="burger__line">4</span>
                     </button>
 
                 </div><!-- /.header__inner -->
@@ -54,7 +57,7 @@
 
 
         <!-- Main -->
-        <section class="section section--last">
+        <div class="section section--last">
             <div class="container">
                 <main class="main">
 
@@ -73,7 +76,7 @@
                                     possimus reiciendis nisi sunt praesentium saepe sequi quia, facere exercitationem a
                                     doloribus veritatis ratione voluptates quod repellendus.
                                 </div>
-                                <time class="articles__date" pubdate="21-03-2023 19:00">21 March, 2023</time>
+                                <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2023</time>
                             </article>
 
                             <article class="articles__item">
@@ -86,7 +89,7 @@
                                     possimus reiciendis nisi sunt praesentium saepe sequi quia, facere exercitationem a
                                     doloribus veritatis ratione voluptates quod repellendus.
                                 </div>
-                                <time class="articles__date" pubdate="21-03-2023 19:00">21 March, 2023</time>
+                                <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2023</time>
                             </article>
 
                             <article class="articles__item">
@@ -99,7 +102,7 @@
                                     possimus reiciendis nisi sunt praesentium saepe sequi quia, facere exercitationem a
                                     doloribus veritatis ratione voluptates quod repellendus.
                                 </div>
-                                <time class="articles__date" pubdate="21-03-2023 19:00">21 March, 2023</time>
+                                <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2023</time>
                             </article>
 
                             <article class="articles__item">
@@ -112,7 +115,7 @@
                                     possimus reiciendis nisi sunt praesentium saepe sequi quia, facere exercitationem a
                                     doloribus veritatis ratione voluptates quod repellendus.
                                 </div>
-                                <time class="articles__date" pubdate="21-03-2023 19:00">21 March, 2023</time>
+                                <time class="articles__date" datetime="2023-03-21 19:00">21 March, 2023</time>
                             </article>
 
                         </div><!-- /.articles -->
@@ -158,7 +161,7 @@
 
                 </main>
             </div><!-- /.container -->
-        </section>
+        </div> <!-- /.section -->
 
         <!-- Footer -->
         <footer class="footer">
@@ -188,6 +191,7 @@
 
     <!-- JavaScript -->
     <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/app.js"></script>
 

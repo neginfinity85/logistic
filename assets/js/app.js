@@ -163,8 +163,8 @@ $(function () {
 		arrows: false,
 		fade: true,
 		autoplay: true,
-		autoplaySpeed: 4000,
-		speed: 500,
+		autoplaySpeed: 3000,
+		speed: 1000,
 	});
 
 	$('#introSliderPrev').on('click', function () {
@@ -187,6 +187,8 @@ $(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 4000,
 		speed: 500,
 	});
 

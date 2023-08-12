@@ -18,6 +18,7 @@ $(function () {
 		navToggle.removeClass('active');
 		nav.removeClass('show');
 	});
+	/* ========================================= */
 
 	let intro = $('#intro');
 	let header = $('#header');
